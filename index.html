@@ -1,0 +1,1272 @@
+<html>
+<head>
+<p style="display: none;" class="cur">EUR <span class="eur-cur">33.0839</span><br>USD <span class="usd-cur">27.7305</span><span class="hide"><br>PLN <span class="pln-cur">7.2134</span></span><!--2--></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Калькулятор растаможки авто </title>
+
+
+<meta name="viewport" content="width=device-width">
+<link href="css/calc-new-3a.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/calc-forspeed-2.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+jq = jQuery.noConflict(true);
+</script>
+<script type="text/javascript" src="js/calc9bb16.js"></script>
+<link href="css/calc-usa-1.css" rel="stylesheet" type="text/css">
+<link href="css/backcall-new.css" rel="stylesheet" type="text/css">
+
+<link href="css/bold.css" rel="stylesheet" type="text/css">
+<link href="css/lang.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/bold.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.scrollbar-inner').scrollbar({
+        "scrollx": "advanced",
+        "scrolly": "none"
+    });
+});
+</script>
+
+<style>
+body .result {
+    /*!* -moz-user-select: text;*/
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+}
+#content .accordion-head {
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+<div class="change1 m2">
+<table>
+<tbody><tr>
+
+<td class="th2">
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<table class="m-links cal">
+<tbody><tr>
+<td class="link3">
+<div class="new-button m1">
+
+
+
+
+
+</div>
+</td>
+</tr>
+</tbody></table>
+<!--<hr />-->
+<ul id="tabs">
+	<li class="li-1 active"><a href="#" title="">Легковые</a></li>
+	<li class="li-9"><a href="#" title="">США</a></li>
+	<li class="li-6"><a href="#" title="">Грузовые</a></li>
+	<li class="li-2"><a href="#" title="">Электро</a></li>
+	<li class="li-5"><a href="#" title="">Тягач • Полуприцеп</a></li>
+	<li class="li-4"><a href="#" title="">Мото</a></li>
+
+<div class="new-button">
+
+
+</div>
+</ul>
+<div id="hidden">
+	<div class="tab">
+
+    <!---->
+<form id="form-n" action="/" method="post" name="form-n">
+<div class="hidden">
+<div class="all-2">
+<div class="block-1n">
+<p><strong>Тип двигателя:</strong></p>
+<p class="left"><input id="dv-1cn" type="radio" name="4" value="1" checked="checked"> <label for="dv-1cn">- бензиновый</label></p>
+<p class="left"><input id="dv-2cn" type="radio" name="4" value="2"> <label class="last" for="dv-2cn">-&nbsp;дизельный</label></p>
+</div>
+
+<div class="block-2n"><label for="amountn"><strong>Объём двигателя (куб.см.):</strong></label>
+<p class="left w1"><input id="amountn" type="number" name="amountn" value="1598" maxlength="6" class="no-active" min="1"></p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-3n"><label for="amountn"><strong>Год пр-ва:</strong></label>
+<p class="left w2">
+
+<select id="yearn" name="yearn">
+<option value="1">2021</option>
+<option value="1">2020</option>
+<option value="1">2019</option>
+<option value="2">2018</option>
+<option value="3">2017</option>
+<option value="4">2016</option>
+<option value="5">2015</option>
+<option value="6">2014</option>
+<option value="7">2013</option>
+<option value="8">2012</option>
+<option value="9">2011</option>
+<option value="10">2010</option>
+<option value="11">2009</option>
+<option value="12">2008</option>
+<option value="13">2007</option>
+<option value="14">2006</option>
+<option value="15">Старше</option>
+</select>
+
+</p>
+</div>
+
+<div class="block-4n">
+
+
+<label for="costn"><strong>Стоимость авто:</strong></label>
+<div class="left w3">
+<table>
+<tbody><tr>
+<td>
+<input id="costn" type="number" name="costn" value="" maxlength="6" min="1">
+</td>
+<td class="hh2">
+<select>
+<option id="kurs-EUR" value="EUR">EUR</option>
+<option id="kurs-USD" value="USD">USD</option>
+<option id="kurs-PLN" value="PLN">PLN</option>
+</select>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+<div class="all-4">
+
+<div class="block-1a">
+<p><strong>Импортёр:</strong></p>
+<p class="left"><input id="dv-1an" type="radio" name="2" value="1" checked="checked"> <label for="dv-1an">- физ.лицо</label></p>
+<p class="left"><input id="dv-2an" type="radio" name="2" value="2"> <label class="last" for="dv-2an">-&nbsp;юр.лицо</label></p>
+</div>
+
+<div class="block-1b disabled">
+<span class="opacity"></span>
+<p><strong>Cертификат EUR.1:</strong></p>
+<p class="left"><input id="dv-1bn" type="radio" name="3" value="1"> <label for="dv-1bn">- нет</label></p>
+<p class="left"><input id="dv-2bn" type="radio" name="3" value="2"> <label class="last" for="dv-2bn">- да</label></p>
+</div>
+
+</div>
+
+
+
+<input id="kurs" type="hidden" name="kurs" value="33.0839" maxlength="6"> <input id="kurs2" type="hidden" name="kurs2" value="27.7305" maxlength="6"> <input id="kurs3" type="hidden" name="kurs3" value="7.2134" maxlength="6"> <input class="submit" onclick="calculate7(); return false;" type="submit" name="button" value="РАСЧЕТ">
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 178px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b">
+<p align="center"><strong>Основа начисления</strong></p>
+</td>
+<td class="long th1c">
+<p align="center"><strong>Ставка</strong></p>
+</td>
+<td class="long th1d">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Пошлина</strong></p>
+</td>
+<td>
+<p id="a-1n" align="center"></p>
+</td>
+<td>
+<p id="a-2n" align="center"></p>
+</td>
+<td>
+<p id="a-3n" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Акциз</strong></p>
+</td>
+<td>
+<p id="b-1n" align="center"></p>
+</td>
+<td>
+<p id="b-2n" align="center"></p>
+</td>
+<td>
+<p id="b-3n" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>НДС</strong></p>
+</td>
+<td>
+<p id="c-1n" align="center"></p>
+</td>
+<td>
+<p id="c-2n" align="center"></p>
+</td>
+<td>
+<p id="c-3n" align="center"></p>
+</td>
+</tr>
+<tr class="last">
+<td style="padding-bottom: 10px;">
+<p align="center" class="bold1"><strong>Всего</strong></p>
+</td>
+<td colspan="2" style="padding-bottom: 10px;"> </td>
+<td style="padding-bottom: 10px;">
+<p id="d-1" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar" style="width: 0px;"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+<p id="cur"> </p>
+</td>
+<td class="th2">
+<div class="right">
+<p id="d-2">&nbsp;</p>
+<p id="link">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</div>
+</form>
+    <!---->
+    
+    </div>
+
+<!---->
+<div class="tab" style="display: none;">
+<form id="form-usa" action="/" method="post" name="form-usa">
+
+<div class="m1">
+    <div class="block-1">
+    
+    <label for="usa1"><strong>Тип двигателя:</strong></label>
+    <p class="left w2">
+    <select id="usa1">
+    <option id="usa1-1" value="бензин">бензин</option>
+    <option id="usa1-2" value="дизель">дизель</option>
+    <option id="usa1-3" value="электро">электро</option>
+    </select>
+    </p>
+
+    </div>
+    
+    
+    <div class="block-2">
+    
+    <div class="block-2a">
+    <label for="usa2"><strong>Объём двигателя:</strong></label>
+    <p class="left w2">
+    <select id="usa2">
+    <option id="usa2-4" value="0.4 л">0.4 л</option>
+    <option id="usa2-5" value="0.5 л">0.5 л</option>
+    <option id="usa2-6" value="0.6 л">0.6 л</option>
+    <option id="usa2-7" value="0.7 л">0.7 л</option>
+    <option id="usa2-8" value="0.8 л">0.8 л</option>
+    <option id="usa2-9" value="0.9 л">0.9 л</option>
+    <option id="usa2-10" value="1.0 л">1.0 л</option>
+    
+    <option id="usa2-11" value="1.1 л">1.1 л</option>
+    <option id="usa2-12" value="1.2 л">1.2 л</option>
+    <option id="usa2-13" value="1.3 л">1.3 л</option>
+    <option id="usa2-14" value="1.4 л">1.4 л</option>
+    <option id="usa2-15" value="1.5 л">1.5 л</option>
+    <option id="usa2-16" value="1.6 л">1.6 л</option>
+    <option id="usa2-17" value="1.7 л">1.7 л</option>
+    <option id="usa2-18" value="1.8 л">1.8 л</option>
+    <option id="usa2-19" value="1.9 л">1.9 л</option>
+    <option id="usa2-20" value="2.0 л" selected="selected">2.0 л</option>
+    
+    <option id="usa2-21" value="2.1 л">2.1 л</option>
+    <option id="usa2-22" value="2.2 л">2.2 л</option>
+    <option id="usa2-23" value="2.3 л">2.3 л</option>
+    <option id="usa2-24" value="2.4 л">2.4 л</option>
+    <option id="usa2-25" value="2.5 л">2.5 л</option>
+    <option id="usa2-26" value="1.6 л">2.6 л</option>
+    <option id="usa2-27" value="2.7 л">2.7 л</option>
+    <option id="usa2-28" value="2.8 л">2.8 л</option>
+    <option id="usa2-29" value="2.9 л">2.9 л</option>
+    <option id="usa2-30" value="3.0 л">3.0 л</option>
+    
+    <option id="usa2-31" value="3.1 л">3.1 л</option>
+    <option id="usa2-32" value="3.2 л">3.2 л</option>
+    <option id="usa2-33" value="3.3 л">3.3 л</option>
+    <option id="usa2-34" value="3.4 л">3.4 л</option>
+    <option id="usa2-35" value="3.5 л">3.5 л</option>
+    <option id="usa2-36" value="3.6 л">3.6 л</option>
+    <option id="usa2-37" value="3.7 л">3.7 л</option>
+    <option id="usa2-38" value="3.8 л">3.8 л</option>
+    <option id="usa2-39" value="3.9 л">3.9 л</option>
+    <option id="usa2-40" value="4.0 л">4.0 л</option>
+    
+    <option id="usa2-41" value="4.1 л">4.1 л</option>
+    <option id="usa2-42" value="4.2 л">4.2 л</option>
+    <option id="usa2-43" value="4.3 л">4.3 л</option>
+    <option id="usa2-44" value="4.4 л">4.4 л</option>
+    <option id="usa2-45" value="4.5 л">4.5 л</option>
+    <option id="usa2-46" value="4.6 л">4.6 л</option>
+    <option id="usa2-47" value="4.7 л">4.7 л</option>
+    <option id="usa2-48" value="4.8 л">4.8 л</option>
+    <option id="usa2-49" value="4.9 л">4.9 л</option>
+    <option id="usa2-50" value="5.0 л">5.0 л</option>
+    
+    <option id="usa2-51" value="5.1 л">5.1 л</option>
+    <option id="usa2-52" value="5.2 л">5.2 л</option>
+    <option id="usa2-53" value="5.3 л">5.3 л</option>
+    <option id="usa2-54" value="5.4 л">5.4 л</option>
+    <option id="usa2-55" value="5.5 л">5.5 л</option>
+    <option id="usa2-56" value="5.6 л">5.6 л</option>
+    <option id="usa2-57" value="5.7 л">5.7 л</option>
+    <option id="usa2-58" value="5.8 л">5.8 л</option>
+    <option id="usa2-59" value="5.9 л">5.9 л</option>
+    <option id="usa2-60" value="6.0 л">6.0 л</option>
+    
+    <option id="usa2-61" value="6.1 л">6.1 л</option>
+    <option id="usa2-62" value="6.2 л">6.2 л</option>
+    <option id="usa2-63" value="6.3 л">6.3 л</option>
+    <option id="usa2-64" value="6.4 л">6.4 л</option>
+    <option id="usa2-65" value="6.5 л">6.5 л</option>
+    <option id="usa2-66" value="6.6 л">6.6 л</option>
+    <option id="usa2-67" value="6.7 л">6.7 л</option>
+    <option id="usa2-68" value="6.8 л">6.8 л</option>
+    <option id="usa2-69" value="6.9 л">6.9 л</option>
+    <option id="usa2-70" value="7.0 л">7.0 л</option>
+    </select>
+    </p>
+	</div>
+    <script>
+document.getElementsByClassName('tab').item(1).innerHTML = '';
+document.getElementsByClassName('li-9').item(0).innerHTML = "";
+</script>
+    
+    <div class="block-2b">
+    
+    <label for="usa2a"><strong>кВт*ч:</strong></label>
+    <p class="left w1"><input id="usa2a" type="number" name="usa2a" value="" maxlength="6" min="1"></p>
+    
+    </div>
+    </div>
+    </div>
+    
+    <div class="m2">
+    <div class="block-3">
+    
+    <label for="usa3"><strong>Год пр-ва:</strong></label>
+    <p class="left w2">
+    <select id="usa3" name="usa3">
+    <option value="1">2021</option>
+    <option value="1">2020</option>
+    <option value="1">2019</option>
+    <option value="2">2018</option>
+    <option value="3">2017</option>
+    <option value="4">2016</option>
+    <option value="5">2015</option>
+    <option value="6">2014</option>
+    <option value="7">2013</option>
+    <option value="8">2012</option>
+    <option value="9">2011</option>
+    <option value="10">2010</option>
+    <option value="11">2009</option>
+    <option value="12">2008</option>
+    <option value="13">2007</option>
+    <option value="14">2006</option>
+    <option value="15">Старше</option>
+    </select>
+    </p>
+    
+    </div>
+    
+    <div class="block-4">
+    
+    <label for="usa4"><strong>Ставка на аукционе:</strong></label>
+    <div class="left w3">
+<table>
+<tbody><tr>
+<td>
+    
+    <input id="usa4" type="number" name="usa4" value="" maxlength="6" min="1">
+</td>
+<td class="hh2">
+    <select>
+		<option id="kurs-USD" value="USD">USD</option>
+	</select>
+</td>
+</tr>
+</tbody></table>
+    
+    </div>
+    
+    </div>
+    </div>
+    
+    <div class="m3">
+    <div class="block-5">
+	<p><strong>Страховка:</strong></p>
+	<p class="left"><input id="usa5-1" type="checkbox" name="usa5-1" value="1"> <label for="usa5-1">-&nbsp;полная потеря</label></p>
+	<p class="left"><input id="usa5-2" type="checkbox" name="usa5-2" value="2"> <label class="last" for="usa5-2">-&nbsp;доп. повреждения</label></p>
+	</div>
+    </div>
+    
+    <input class="submit" onclick="calculate888(); return false;" type="submit" name="button" value="РАСЧЕТ">
+
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link"><a href="dostavka-avto-iz-ssha.html">Рассчитать доставку</a>
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a2">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b2">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Ставка на аукционе</strong></p>
+</td>
+<td>
+<p id="usa-1" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Сбор аукциона</strong></p>
+</td>
+<td>
+<p id="usa-2" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Сбор за обработку</strong></p>
+</td>
+<td>
+<p id="usa-3" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Онлайн ставка</strong></p>
+</td>
+<td>
+<p id="usa-4" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Страховка</strong></p>
+</td>
+<td>
+<p id="usa-5" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Таможенные платежи</strong></p>
+</td>
+<td>
+<p id="usa-6" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Дополнительные расходы*</strong></p>
+</td>
+<td>
+<p id="usa-7" align="center"></p>
+</td>
+</tr>
+<!--<tr>
+<td>
+<p align="center">Пошлина</p>
+</td>
+
+<td>
+<p id="c-1n" align="center"></p>
+</td>
+<td>
+<p id="c-2n" align="center"></p>
+</td>
+<td>
+<p id="c-3n" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center">Акциз</p>
+</td>
+<td>
+<p id="c-1n" align="center"></p>
+</td>
+<td>
+<p id="c-2n" align="center"></p>
+</td>
+<td>
+<p id="c-3n" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center">НДС</p>
+</td>
+<td>
+<p id="c-1n" align="center"></p>
+</td>
+<td>
+<p id="c-2n" align="center"></p>
+</td>
+<td>
+<p id="c-3n" align="center"></p>
+</td>
+</tr>-->
+<tr>
+
+<td>
+<p id="usa-10" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+
+<td>
+<p id="usa-9" align="center"></p>
+</td>
+</tr>
+<tr>
+
+<td>
+<p id="usa-8" align="center"></p>
+</td>
+</tr>
+<tr class="grey last">
+<td>
+<p align="center"><strong>Всего без доставки и ремонта</strong></p>
+</td>
+<td>
+<p id="usa-11" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+</td>
+<td class="th2">
+
+<div class="right">
+<p id="d-2">&nbsp;</p>
+<p id="link"><a href="dostavka-avto-iz-ssha.html">Рассчитать доставку</a>
+
+<p></p>
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+</form>
+</div>
+<!---->
+
+	<div class="tab" style="display: none;">
+    <!---->
+        <!---->
+<form id="form-g2" action="/" method="post" name="form-g2">
+<div class="all-2">
+<div class="block-1">
+<p><strong>Состояние:</strong></p>
+<p class="left"><input id="dv-1g2" type="radio" name="1" value="1"> <label for="dv-1g2">- новый</label></p>
+<p class="left"><input id="dv-2g2" type="radio" name="1" value="2" checked="checked"> <label class="last" for="dv-2g2">- б/у</label></p>
+</div>
+<div class="block-1a">
+<p><strong>Импортёр:</strong></p>
+<p class="left"><input id="dv-1ag2" type="radio" name="2" value="1" checked="checked"> <label for="dv-1ag2">- физ.лицо</label></p>
+<p class="left"><input id="dv-2ag2" type="radio" name="2" value="2"> <label class="last" for="dv-2ag2">- юр.лицо</label></p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-1b disabled">
+<span class="opacity"></span>
+
+<p><strong>Cертификат EUR.1:</strong></p>
+<p class="left"><input id="dv-1bg2" type="radio" name="3" value="1"> <label for="dv-1bg2">- нет</label></p>
+<p class="left"><input id="dv-2bg2" type="radio" name="3" value="2"> <label class="last" for="dv-2bg2">- да</label></p>
+</div>
+<div class="block-1c">
+<p><strong>Тип двигателя:</strong></p>
+<p class="left"><input id="dv-1cg2" type="radio" name="4" value="1" checked="checked"> <label for="dv-1cg2">- бензиновый</label></p>
+<p class="left"><input id="dv-2cg2" type="radio" name="4" value="2"> <label class="last" for="dv-2cg2">- дизельный</label></p>
+</div>
+</div>
+<div class="all">
+<div class="all-2">
+<div class="block-2g2"><label for="amountg2"><strong>Объём двигателя (куб.см.):</strong></label>
+<p class="left w1"><input id="amountg2" type="number" name="amountg2" value="1598" maxlength="6" class="no-active" min="1"></p>
+</div>
+<div class="block-5g2">
+<span class="opacity"></span>
+<label><strong>Возраст авто:</strong></label>
+<p class="left w2">
+<select>
+<option id="5e" value="до 5 лет">до 5 лет</option>
+<option id="58e" value="5 - 8 лет">5 - 8 лет</option>
+<option id="8e" value="более 8 лет">более 8 лет</option>
+</select>
+<select class="hide"><option id="no" value="-">-</option><option id="no2" value="более 8 лет">более 8 лет</option></select>
+</p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-4g2"><label for="amountg2"><strong>Грузоподъёмность:</strong></label>
+<p class="left w2">
+<select>
+<option id="5t" value="до 5 тонн">до 5 тонн</option>
+<option id="520t" value="5 - 20 тонн">5 - 20 тонн</option>
+<option id="20t" value="более 20 тонн">более 20 тонн</option>
+</select>
+</p>
+</div>
+<div class="block-3g2"><label for="costg2"><strong>Стоимость авто:</strong></label>
+<div class="left w3">
+<table>
+<tbody><tr>
+<td>
+<input id="costg2" type="number" name="costg" value="" maxlength="6" min="1">
+</td>
+<td class="hh2">
+<select>
+<option id="kurs-EUR" value="EUR">EUR</option>
+<option id="kurs-USD" value="USD">USD</option>
+<option id="kurs-PLN" value="PLN">PLN</option>
+</select>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<input class="submit" onclick="calculate6(); return false;" type="submit" name="button" value="РАСЧЕТ">
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b">
+<p align="center"><strong>Основа начисления</strong></p>
+</td>
+<td class="long th1c">
+<p align="center"><strong>Ставка</strong></p>
+</td>
+<td class="long th1d">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Пошлина</strong></p>
+</td>
+<td>
+<p id="a-1" align="center"></p>
+</td>
+<td>
+<p id="a-2" align="center"></p>
+</td>
+<td>
+<p id="a-3" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Акциз</strong></p>
+</td>
+<td>
+<p id="b-1" align="center"></p>
+</td>
+<td>
+<p id="b-2" align="center"></p>
+</td>
+<td>
+<p id="b-3" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>НДС</strong></p>
+</td>
+<td>
+<p id="c-1" align="center"></p>
+</td>
+<td>
+<p id="c-2" align="center"></p>
+</td>
+<td>
+<p id="c-3" align="center"></p>
+</td>
+</tr>
+<tr class="last">
+<td style="padding-bottom: 10px;">
+<p align="center" class="bold1"><strong>Всего</strong></p>
+</td>
+<td colspan="2" style="padding-bottom: 10px;"> </td>
+<td style="padding-bottom: 10px;">
+<p id="d-1" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+
+<p id="cur"> </p>
+</td>
+<td class="th2">
+
+<div class="right">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+ 
+
+
+</div>
+</form>
+    <!---->
+    </div>
+	<div class="tab" style="display: none;">
+    
+    <!---->
+<form id="form-e" action="/" method="post" name="form-e">
+<div class="hidden">
+<div class="all-2">
+<div class="block-1">
+<p><strong>Тип авто:</strong></p>
+<p class="left"><input id="dv-1g" type="radio" name="1" value="1" checked="checked"> <label for="dv-1g">- легковой</label></p>
+<p class="left"><input id="dv-2g" type="radio" name="1" value="2"> <label class="last" for="dv-2g">- грузовой</label></p>
+</div>
+<div class="block-1a disabled">
+<span class="opacity"></span>
+<p><strong>Импортёр:</strong></p>
+<p class="left"><input id="dv-1a" type="radio" name="2" value="1"> <label for="dv-1a">- физ.лицо</label></p>
+<p class="left"><input id="dv-2a" type="radio" name="2" value="2"> <label class="last" for="dv-2a">- юр.лицо</label></p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-1b disabled">
+<span class="opacity"></span>
+<p><strong>Cертификат EUR.1:</strong></p>
+<p class="left"><input id="dv-1b" type="radio" name="3" value="1"> <label for="dv-1b">- нет</label></p>
+<p class="left"><input id="dv-2b" type="radio" name="3" value="2"> <label class="last" for="dv-2b">- да</label></p>
+</div>
+<div class="block-3"><label for="costg"><strong>Стоимость авто:</strong></label>
+
+<div class="left w3">
+<table>
+<tbody><tr>
+<td>
+<input id="costg" type="number" name="costg" value="" maxlength="6" min="1">
+</td>
+<td class="hh2">
+<select>
+<option id="kurs-EUR" value="EUR">EUR</option>
+<option id="kurs-USD" value="USD">USD</option>
+<option id="kurs-PLN" value="PLN">PLN</option>
+</select>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+</div>
+
+<div class="all-4">
+<div class="block-4">
+<span class="opacity"></span>
+<label for="kvtch"><strong>кВт*ч:</strong></label>
+<p class="left w1"><input id="kvtch" type="number" name="kvtch" value="" maxlength="6" min="1"></p>
+</div>
+</div>
+
+<input class="submit" onclick="calculate2(); return false;" type="submit" name="button" value="РАСЧЕТ">
+</div>
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b">
+<p align="center"><strong>Основа начисления</strong></p>
+</td>
+
+<td class="long th1c">
+<p align="center"><strong>Ставка</strong></p>
+</td>
+<td class="long th1d">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Пошлина</strong></p>
+</td>
+<td>
+<p id="a-1" align="center"></p>
+</td>
+<td>
+<p id="a-2" align="center"></p>
+</td>
+<td>
+<p id="a-3" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Акциз</strong></p>
+</td>
+<td>
+<p id="b-1" align="center"></p>
+</td>
+<td>
+<p id="b-2" align="center"></p>
+</td>
+<td>
+<p id="b-3" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>НДС</strong></p>
+</td>
+<td>
+<p id="c-1" align="center"></p>
+</td>
+<td>
+<p id="c-2" align="center"></p>
+</td>
+<td>
+<p id="c-3" align="center"></p>
+</td>
+</tr>
+<tr class="last">
+<td style="padding-bottom: 10px;">
+<p align="center" class="bold1"><strong>Всего</strong></p>
+</td>
+<td colspan="2" style="padding-bottom: 10px;"> </td>
+<td style="padding-bottom: 10px;">
+<p id="d-1" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+<p id="cur"> </p>
+</td>
+<td class="th2">
+<div class="right">
+<p id="d-2">&nbsp;</p>
+<p id="link">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+ 
+
+
+
+</div>
+</form>
+    <!---->
+    
+    </div>
+	<div class="tab" style="display: none;">
+    
+    <!---->
+<form id="form-t" action="/" method="post" name="form-t">
+<div class="hidden">
+<div class="all-2">
+<div class="block-1">
+<p><strong>Состояние:</strong></p>
+<p class="left"><input id="dv-1gt" type="radio" name="1" value="1" checked="checked"> <label for="dv-1gt">- новый</label></p>
+<p class="left"><input id="dv-2gt" type="radio" name="1" value="2"> <label class="last" for="dv-2gt">- б/у</label></p>
+</div>
+<div class="block-1a">
+<p><strong>Импортёр:</strong></p>
+<p class="left"><input id="dv-1at" type="radio" name="2" value="1"> <label for="dv-1at">- физ.лицо</label></p>
+<p class="left"><input id="dv-2at" type="radio" name="2" value="2" checked="checked"> <label class="last" for="dv-2at">- юр.лицо</label></p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-1b disabled">
+<span class="opacity"></span>
+<p><strong>Cертификат EUR.1:</strong></p>
+<p class="left"><input id="dv-1bt" type="radio" name="3" value="1"> <label for="dv-1bt">- нет</label></p>
+<p class="left"><input id="dv-2bt" type="radio" name="3" value="2"> <label class="last" for="dv-2bt">- да</label></p>
+</div>
+<div class="block-3"><label for="costgt"><strong>Стоимость авто:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+<div class="left w3">
+
+<table>
+<tbody><tr>
+<td>
+<input id="costgt" type="number" name="costgt" value="" maxlength="6" min="1">
+
+</td>
+<td class="hh2">
+<select>
+<option id="kurs-EUR" value="EUR">EUR</option>
+<option id="kurs-USD" value="USD">USD</option>
+<option id="kurs-PLN" value="PLN">PLN</option>
+</select>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+
+</div>
+</div>
+</div>
+<input class="submit" onclick="calculate4(); return false;" type="submit" name="button" value="РАСЧЕТ">
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b">
+<p align="center"><strong>Основа начисления</strong></p>
+</td>
+<td class="long th1c">
+<p align="center"><strong>Ставка</strong></p>
+</td>
+<td class="long th1d">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Пошлина</strong></p>
+</td>
+<td>
+<p id="a-1" align="center"></p>
+</td>
+<td>
+<p id="a-2" align="center"></p>
+</td>
+<td>
+<p id="a-3" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Акциз</strong></p>
+</td>
+<td>
+<p id="b-1" align="center"></p>
+</td>
+<td>
+<p id="b-2" align="center"></p>
+</td>
+<td>
+<p id="b-3" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>НДС</strong></p>
+</td>
+<td>
+<p id="c-1" align="center"></p>
+</td>
+<td>
+<p id="c-2" align="center"></p>
+</td>
+<td>
+<p id="c-3" align="center"></p>
+</td>
+</tr>
+<tr class="last">
+<td style="padding-bottom: 10px;">
+<p align="center" class="bold1"><strong>Всего</strong></p>
+</td>
+<td colspan="2" style="padding-bottom: 10px;"> </td>
+<td style="padding-bottom: 10px;">
+<p id="d-1" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+<p id="cur"> </p>
+</td>
+<td class="th2">
+<div class="right">
+<p id="d-2">&nbsp;</p>
+<p id="link">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+ 
+
+</div>
+</form>    
+    <!---->
+    
+    </div>
+    
+    <!---->
+    
+    <!---->
+    
+	<div class="tab" style="display: none;">
+    
+    <!---->
+<form id="form-m" action="/" method="post" name="form-m">
+<div class="hidden">
+<div class="all-2">
+<div class="block-2a"><label for="amountd"><strong>Объём двигателя (куб.см.):</strong></label>
+<p class="left w1"><input id="amountd" type="number" name="amount" value="1598" maxlength="6" class="no-active" min="1"></p>
+</div>
+<div class="block-1a">
+<p><strong>Импортёр:</strong></p>
+<p class="left"><input id="dv-1ad" type="radio" name="2" value="1" checked="checked"> <label for="dv-1ad">- физ.лицо</label></p>
+<p class="left"><input id="dv-2ad" type="radio" name="2" value="2"> <label class="last" for="dv-2ad">- юр.лицо</label></p>
+</div>
+</div>
+<div class="all-3">
+<div class="block-1b disabled">
+<span class="opacity"></span>
+<p><strong>Cертификат EUR.1:</strong></p>
+<p class="left"><input id="dv-1bd" type="radio" name="3" value="1"> <label for="dv-1bd">- нет</label></p>
+<p class="left"><input id="dv-2bd" type="radio" name="3" value="2"> <label class="last" for="dv-2bd">- да</label></p>
+</div>
+<div class="block-3"><label for="costd"><strong>Стоимость мото:</strong></label>
+
+<div class="left w3">
+<table>
+<tbody><tr>
+<td>
+<input id="costd" type="number" name="cost" value="" maxlength="6" min="1">
+</td>
+<td class="hh2">
+<select>
+<option id="kurs-EUR" value="EUR">EUR</option>
+<option id="kurs-USD" value="USD">USD</option>
+<option id="kurs-PLN" value="PLN">PLN</option>
+</select>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+</div>
+</div>
+<input class="submit" onclick="calculate3(); return false;" type="submit" name="button" value="РАСЧЕТ">
+<div class="result">
+<div class="m1">
+<p id="d-2"></p>
+<p id="link">
+
+</div>
+<table class="change1">
+<tbody><tr>
+<td class="th1">
+<div class="scroll-wrapper yellow-cont scrollbar-inner" style="position: relative;"><div class="yellow-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+<table class="border">
+<tbody>
+<tr>
+<td class="long th1a">
+<p align="center"><strong>Вид платежа</strong></p>
+</td>
+<td class="long th1b">
+<p align="center"><strong>Основа начисления</strong></p>
+</td>
+<td class="long th1c">
+<p align="center"><strong>Ставка</strong></p>
+</td>
+<td class="long th1d">
+<p align="center"><strong>Сумма</strong></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>Пошлина</strong></p>
+</td>
+<td>
+<p id="a-1" align="center"></p>
+</td>
+<td>
+<p id="a-2" align="center"></p>
+</td>
+<td>
+<p id="a-3" align="center"></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><strong>Акциз</strong></p>
+</td>
+<td>
+<p id="b-1" align="center"></p>
+</td>
+<td>
+<p id="b-2" align="center"></p>
+</td>
+<td>
+<p id="b-3" align="center"></p>
+</td>
+</tr>
+<tr class="grey">
+<td>
+<p align="center"><strong>НДС</strong></p>
+</td>
+<td>
+<p id="c-1" align="center"></p>
+</td>
+<td>
+<p id="c-2" align="center"></p>
+</td>
+<td>
+<p id="c-3" align="center"></p>
+</td>
+</tr>
+<tr class="last">
+<td style="padding-bottom: 10px;">
+<p align="center" class="bold1"><strong>Всего</strong></p>
+</td>
+<td colspan="2" style="padding-bottom: 10px;"> </td>
+<td style="padding-bottom: 10px;">
+<p id="d-1" align="center" class="bold2"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div class="scroll-element scroll-x"><div class="scroll-element_corner"></div><div class="scroll-arrow scroll-arrow_less"></div><div class="scroll-arrow scroll-arrow_more"></div><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_inner-wrapper"><div class="scroll-element_inner scroll-element_track"><div class="scroll-element_inner-bottom"></div></div></div><div class="scroll-bar"><div class="scroll-bar_body"><div class="scroll-bar_body-inner"></div></div><div class="scroll-bar_bottom"></div><div class="scroll-bar_center"></div></div></div></div></div>
+<p id="cur"> </p>
+</td>
+<td class="th2">
+<div class="right">
+<p id="d-2">&nbsp;</p>
+<p id="link">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+ 
+
+
+    <!---->
+    
+    </div></form>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

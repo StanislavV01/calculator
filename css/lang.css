@@ -1,0 +1,234 @@
+body {
+    /*!* -moz-user-select: none;*/
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+#header p.lang {
+	text-align:center;
+	font-size:15px;
+	line-height:20px;
+	font-weight:bold;
+	cursor:default;
+	margin-left:7px;
+	margin-top:6px;
+	border-left:1px solid #003594;
+	padding-left:7px;
+	color:#229fff;
+	display:block;
+}
+#header p.lang a {
+	color:#003594;
+	font-size:15px;
+	font-weight:bold;
+}
+#header p.lang a:hover {
+	color:#40a7ff;
+}
+
+.hide .lang {
+	text-align:center;
+	font-size:15px;
+	line-height:20px;
+	font-weight:bold;
+	cursor:default;
+    position: absolute;
+    right: 330px;
+    top: 23px;
+	line-height:16px;
+	color:#229fff;
+	display:block;
+}
+.hide .lang a {
+	color:#003594;
+	font-size:15px;
+	font-weight:bold;
+}
+.hide .lang a:hover {
+	color:#40a7ff;
+}
+
+#header .backcall.new.th1 {
+    margin-left: -15px;
+}
+#header .top p.cur {
+    padding: 0 8px;
+}
+#header .top p {
+    margin-right:8px;
+}
+
+#content {
+    font-size: 16px;
+    line-height: 20px;
+}
+#content .result {
+    line-height:14px;
+}
+#content .callbroker {
+    line-height:14px;
+}
+#content .callbroker a {
+    width: 164px;
+}
+#text .callbroker {
+    line-height:14px;
+	display:none;
+}
+#text .callbroker a {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 15px;
+    padding: 9px 0px 8px 24px;
+    background: #ccc;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: url(../img/backcall2.png) no-repeat 0px 0px;
+    cursor: pointer;
+	margin:auto;
+}
+#text .callbroker a {
+    width: 164px;
+}
+#content .prices {
+    line-height:normal;
+}
+#content .resize p {
+    font-size: 14px;
+    line-height: 16px;
+}
+#content .move .prices .price .num {
+    margin-top: 3px;
+}
+#content .move .prices .price button {
+    margin-top: 0px;
+}
+#content .move .prices .price .desc {
+    padding: 9px 5px;
+}
+#content .price button {
+    width: 164px;
+}
+
+#content p {
+    font-size: 16px;
+    line-height: 20px;
+}
+#content .tab p {
+    font-size: 14px;
+    line-height: 16px;
+}
+#content ul li {
+    font-size: 16px;
+    line-height: 20px;
+}
+#content ol li {
+    font-size: 16px;
+    line-height: 20px;
+}
+#content h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+#content .price h3 {
+    line-height: 16px;
+}
+
+#header p.lang {
+	font-size:15px;
+	line-height:20px;
+	font-weight:bold;
+	color:#229fff;
+}
+#header p.lang a {
+	font-size:15px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.hide .lang {
+	font-size:15px;
+	font-weight:bold;
+    color: #229fff;
+}
+.hide .lang a {
+	font-size:15px;
+	font-weight:bold;
+}
+
+@media
+only screen and (max-width : 960px), only screen and  and (max-device-width : 960px) {
+#header p.lang {
+	display:none;
+}
+
+.hide .lang {
+	margin-top:7px;
+}
+.hide .lang a {
+	margin-right:5px;
+}
+.hide .lang .hidebr {
+	display:none;
+}
+
+#text .callbroker {
+	display:block;
+}
+
+}
+@media
+only screen and (max-width : 640px), only screen and  and (max-device-width : 640px) {
+.hide .lang {
+    right: 303px;
+}
+}
+
+@media
+only screen and (max-width : 560px), only screen and  and (max-device-width : 560px) {
+.hide .lang {
+    right: 12px;
+    top: 74px;
+}
+#clone .hide .lang {
+	display:none;
+}
+}
+@media
+only screen and (max-width : 528px), only screen and  and (max-device-width : 528px) {
+.hide .lang {
+    right: 12px;
+    top: 74px;
+}
+}
+@media
+only screen and (max-width : 500px), only screen and  and (max-device-width : 500px) {
+.hide .lang {
+    right: 65px;
+    top: 24px;
+}
+#clone .hide .lang {
+	display:block;
+}
+.hide .lang {
+    right: 65px;
+    top: 24px;
+}
+}
+@media
+only screen and (max-width : 340px), only screen and  and (max-device-width : 340px) {
+
+.hide .lang {
+	margin-top:0;
+}
+.hide .lang .hidebr {
+	display: inline;
+}
+.hide .lang a {
+	margin-right:0;
+	top:0;
+}
+}
